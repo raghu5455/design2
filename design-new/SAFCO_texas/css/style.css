@@ -1,0 +1,253 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Vollkorn, serif;
+}
+
+p {
+    font-family: Barlow, sans-serif;
+}
+
+.header {
+    background: url(../img/desktop_hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% center;
+}
+
+.texas_logo {
+    text-align: end;
+    padding-top: 138px;
+    padding-bottom: 18px;
+    padding-right: 60px;
+}
+
+.texas_logo img {
+    max-width: 350px;
+}
+
+.meet_partner {}
+
+.meet_partner h2 {
+    font-Weight: 400;
+    font-Size: 96px;
+    line-height: 96px;
+    letter-spacing: 18px;
+    color: #545859;
+    padding-bottom: 20px;
+}
+
+.meet_partner p {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    color: #545859;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.partner_inner {
+    background: url(../img/img-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 270px;
+    border: 4px solid #BA0000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.partner_inner::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 45%;
+}
+
+.partner_inner1 {
+    background: url(../img/img-2.png);
+}
+
+.partner_inner h5 {
+    color: #fff;
+    position: relative;
+    z-index: 9;
+    text-transform: uppercase;
+    font-family: Barlow, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.partner_inner p {
+    color: #fff;
+    position: relative;
+    z-index: 9;
+    text-transform: uppercase;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.partner_inner img {
+    position: relative;
+    z-index: 9;
+}
+
+.safco_logo {
+    margin: 50px 0;
+}
+@media (min-width:991px) and (max-width:1300px) {
+    .texas_logo img {
+        max-width: 300px;
+    }
+    .texas_logo {
+        padding-top: 155px;
+    }
+} 
+@media (min-width:1700px) {
+    .texas_logo img {
+        max-width: 400px;
+    }
+}
+@media (min-width:991px) and (max-width:1199px) {
+.meet_partner h2 {
+    font-Weight: 400;
+    font-Size: 85px;
+    line-height: 96px;
+    letter-spacing: 18px;
+    color: #545859;
+    padding-bottom: 20px;
+}
+.texas_logo {
+    text-align: end;
+    padding-top: 166px;
+    padding-bottom: 18px;
+    padding-right: 60px;
+}
+.texas_logo img {
+    max-width: 265px;
+}
+}
+@media (max-width:991px) {
+    .header {
+        background: url(../img/Tablet_hero.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .texas_logo {
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 190px;
+        padding-right: 0;
+    }
+    .texas_logo img {
+        max-width: 246px;
+    }
+    .meet_partner h2 {
+        font-Size: 64px;
+        line-height: 64px;
+        letter-spacing: 14px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .meet_partner p {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        padding-right: 0;
+        text-align: center;
+    }
+    .partner_inner {
+       height: 200px;
+    }
+    .partner_inner h5 {
+        font-size: 32px;
+    }
+    
+    .partner_inner p {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .safco_logo {
+        text-align: center;
+    }
+}
+@media (max-width:767px) {
+    .header {
+        background: url(../img/mobile_hero.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center -70px;
+        padding-bottom: 70px;
+    }
+    
+    .texas_logo {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 36%;
+        padding-right: 0;
+    }
+    .texas_logo img {
+        max-width: 184px;
+    }
+    .meet_partner h2 {
+        font-Size: 42px;
+        line-height: 42px;
+        letter-spacing: 13px;
+    }
+    .meet_partner p {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 20px;
+    }
+    .partner_inner {
+        margin-bottom: 20px;
+    }
+    .partner_inner h5 {
+        font-size: 24px;
+        line-height: 31px;
+    }
+    
+    .partner_inner p {
+        font-size: 15px;
+        line-height: 19.5px;
+        padding-bottom: 0;
+    }
+    .safco_logo {
+        text-align: center;
+    }
+}
+
+@media (min-width:600px) and (max-width:767px) {
+    .texas_logo {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 34%;
+        padding-right: 0;
+    }
+    .header {
+        background-position: center 26%;
+    }
+}@media (max-width: 340px){
+.meet_partner h2 {
+    letter-spacing: 10px;
+}
+}

@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <style>
+        .header {
+            overflow: visible;
+        }
+
+        .header:after,
+        .header:before {
+            display: none;
+        }
+
+        .nav-bar .dropdown ul {
+            display: block;
+            position: absolute;
+            left: 14px;
+            top: calc(100% + 5px);
+            margin: 0;
+            padding: 10px 0;
+            z-index: 99;
+            opacity: 0;
+            visibility: hidden;
+            background: #fff;
+            box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+            transition: 0.3s;
+            padding: 0;
+        }
+
+        .nav-bar .dropdown ul li {
+            min-width: 200px;
+            margin: 0;
+        }
+
+        .nav-bar .dropdown ul a {
+            padding: 8px 20px;
+            text-transform: none;
+            display: block;
+            margin: 0;
+        }
+
+        .nav-bar .dropdown ul a i {
+            font-size: 12px;
+        }
+
+        .nav-bar .dropdown ul a:hover,
+        .nav-bar .dropdown ul .active:hover,
+        .nav-bar .dropdown ul li:hover>a {
+            color: #0079d6;
+        }
+
+        .nav-bar .dropdown:hover>ul {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .nav-bar .dropdown .dropdown ul {
+            top: 0;
+            left: calc(100% - 30px);
+            visibility: hidden;
+        }
+
+        .nav-bar .dropdown .dropdown:hover>ul {
+            opacity: 1;
+            top: 0;
+            left: 100%;
+            visibility: visible;
+        }
+
+        @media (max-width: 1366px) {
+            .nav-bar .dropdown .dropdown ul {
+                left: -90%;
+            }
+
+            .nav-bar .dropdown .dropdown:hover>ul {
+                left: -100%;
+            }
+        }
+
+
+
+        .nav-bar .dropdown a i {
+            font-size: 14px;
+            margin-left: 5px;
+        }
+
+        @media (max-width: 991px) {
+            .nav-bar .dropdown:hover>ul {
+                display: block;
+            }
+
+            .nav-bar .dropdown a {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .navbar-mobile .dropdown ul {
+                position: static;
+                display: none;
+                margin: 10px 13px;
+                padding: 10px 0;
+                z-index: 99;
+                opacity: 1;
+                visibility: visible;
+                background: #fff;
+                box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+            }
+
+            .nav-bar .dropdown a i:hover>ul {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .navbar-mobile .dropdown ul li {
+                min-width: 200px;
+            }
+
+            .navbar-mobile .dropdown ul a {
+                padding: 10px 15px;
+            }
+
+            .navbar-mobile .dropdown ul a i {
+                font-size: 12px;
+            }
+
+            .navbar-mobile .dropdown ul a:hover,
+            .navbar-mobile .dropdown ul .active:hover,
+            .navbar-mobile .dropdown ul li:hover>a {
+                color: #0079d6;
+            }
+
+        }
+    </style>
+    <header class="header">
+        <nav>
+            <div class="container-fluid">
+                <div class="nav-bar navbar-mobile" id="navbar">
+                    <span class="logo navLogo"><a href="#"><img src="images/logo.png"></a></span>
+                    <div class="menu">
+                        <div class="logo-toggle">
+                            <span class="logo"><a href="#"><img src="images/logo.png"></a></span>
+                            <i class='bx bx-x siderbarClose'></i>
+                        </div>
+
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="dropdown "><a href="javascript:void(0)">Service<i class="bi bi-chevron-down"></i></a>
+                                <ul class="dropdown-active">
+                                    <li><a href="#">Service 1</a></li>
+                                    <li><a href="#">Service 2</a></li>
+                                    <li><a href="#">Service 3</a></li>
+                                    <li><a href="#">Service 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#testimonial">Testimonial</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                        <div class="nav-btn mobile-menu-btn">
+                            <a href="#" class="button">Get Started</a>
+                        </div>
+                    </div>
+                    <i class='bx bx-menu sidebarOpen'></i>
+                    <div class="nav-btn">
+                        <a href="#" class="btns ">Get Started</a>
+                    </div>
+
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="ml-main-banner-area">
+        <div class="header_content" data-aos="fade-up" data-aos-duration="2000">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-lg-6 ">
+                        <div class="header_content_data">
+                            <span class="sub-title">Customize pre-trained LLMs for faster, top-notch results.</span>
+                            <h1>Unlock the potential of AI with your data</h1>
+                            <p>Build high-quality AI 100x faster with programmatic data development.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="ml-main-banner-image"><img src="images/main.2069715c.png" alt="image">
+                            <div class="circle-shape"></div>
+                            <div class="wrap-shape"><img src="images/shape3.eecc77f1.png" alt="image"></div>
+                            <div class="wrap-text"><i class='bx bx-check'></i><span>Get Professional Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="tag-lines inner-section-padd">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <div class="tag-lines-wrap">
+                        <h3 class="tag-lines-heading">Software<br>That <br>Think:</h3>
+
+                        <p>Making AI accessible to everyone, everywhere</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="company">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="600">
+                    <div class="discription_box">
+                        <div class="icon">
+                            <img src="images/quality.png">
+                        </div>
+                        <h3>Label data at scale</h3>
+                        <p>Manually labeling and curating data for training or fine-and tuning models can take
+                            person-months. Snorkel Flow enables you to develop higher-quality data 100x faster.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="800">
+                    <div class="discription_box">
+                        <div class="icon">
+                            <img src="images/team.png">
+                        </div>
+                        <h3>Fine-tune LLMs</h3>
+                        <p>Generic LLMs don't work well enough for your domain-specific, high-value problems. Snorkel
+                            Flow empowers you to fine-tune LLMs using your data, enabling you to build models you can
+                            trust.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="discription_box">
+                        <div class="icon">
+                            <img src="images/support.png">
+                        </div>
+                        <h3>Build specialist modelst</h3>
+                        <p>LLMs are extremely slow and expensive to use in production. Using Snorkel Flow, you can
+                            distill LLMs into 1000x smaller and cheaper models with the same or better accuracy.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="our-highlights-particle"><img src="images/ai-shape.webp" alt="AI development &amp; consulting"
+                class="img-fluid"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="question">
+        <div class="container">
+            <div class="heading  mb-2 mb-lg-5 mt-0 " data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+
+                <div class="col-lg-12" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="question_dropdown">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Lorem Ipsum is simply dummy text?
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the, when
+                                            an unknown printer took a galley of type and scrambled it to make a type
+                                            specimen book.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Lorem Ipsum is simply dummy text?
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the, when
+                                            an unknown printer took a galley of type and scrambled it to make a type
+                                            specimen book.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Lorem Ipsum is simply dummy text?
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the, when
+                                            an unknown printer took a galley of type and scrambled it to make a type
+                                            specimen book.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Lorem Ipsum is simply dummy text?
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the, when
+                                            an unknown printer took a galley of type and scrambled it to make a type
+                                            specimen book.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonials" id="testimonial" data-aos="fade-up" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="heading">
+                        <h2>What Our Client Say</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div id="testimonial-slider" class="owl-carousel">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-inner-1">
+                                <div class="testi-quote-icon">
+                                    <img src="images/testimonial-quote.png" class="img-fluid">
+                                </div>
+                                <div class="client-comment">
+                                    <h5>Best Creative Agency!</h5>
+                                </div>
+                            </div>
+                            <div class="client-message testimoanial-inner-2">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque
+                                    quae tempora......"</p>
+                            </div>
+                            <div class="testimonial-border-shape testimoanial-inner-3">
+
+
+                            </div>
+                            <div class="testimoanial-inner-4">
+                                <div class="testimoanial-client-img">
+                                    <img src="https://picsum.photos/90/90" class="img-fluid">
+                                </div>
+                                <div class="client-info">
+                                    <h6>Lorem Ipsum</h6>
+                                    <p>Client of steve ai lab</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="testimonial-inner-1">
+                                <div class="testi-quote-icon">
+                                    <img src="images/testimonial-quote.png" class="img-fluid">
+                                </div>
+                                <div class="client-comment">
+                                    <h5>Great Work</h5>
+                                </div>
+                            </div>
+                            <div class="client-message testimoanial-inner-2">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque
+                                    quae tempora......"</p>
+                            </div>
+                            <div class="testimonial-border-shape testimoanial-inner-3">
+
+                            </div>
+                            <div class="testimoanial-inner-4">
+                                <div class="testimoanial-client-img">
+                                    <img src="https://picsum.photos/90/90">
+                                </div>
+                                <div class="client-info">
+                                    <h6>Lorem Ipsum</h6>
+                                    <p>Client of steve ai lab</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-slide">
+                            <div class="testimonial-inner-1">
+                                <div class="testi-quote-icon">
+                                    <img src="images/testimonial-quote.png" class="img-fluid">
+                                </div>
+                                <div class="client-comment">
+                                    <h5>Best Creative Agency!</h5>
+                                </div>
+                            </div>
+                            <div class="client-message testimoanial-inner-2">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque
+                                    quae tempora......"</p>
+                            </div>
+                            <div class="testimonial-border-shape testimoanial-inner-3">
+
+                            </div>
+                            <div class="testimoanial-inner-4">
+                                <div class="testimoanial-client-img">
+                                    <img src="https://picsum.photos/90/90">
+                                </div>
+                                <div class="client-info">
+                                    <h6>Lorem Ipsum</h6>
+                                    <p>Client of steve ai lab</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-inner-1">
+                                <div class="testi-quote-icon">
+                                    <img src="images/testimonial-quote.png" class="img-fluid">
+                                </div>
+                                <div class="client-comment">
+                                    <h5>Best Creative Agency!</h5>
+                                </div>
+                            </div>
+                            <div class="client-message testimoanial-inner-2">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque
+                                    quae tempora......"</p>
+                            </div>
+                            <div class="testimonial-border-shape testimoanial-inner-3">
+
+                            </div>
+                            <div class="testimoanial-inner-4">
+                                <div class="testimoanial-client-img">
+                                    <img src="https://picsum.photos/90/90">
+                                </div>
+                                <div class="client-info">
+                                    <h6>Lorem Ipsum</h6>
+                                    <p>Client of steve ai lab</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-inner-1">
+                                <div class="testi-quote-icon">
+                                    <img src="images/testimonial-quote.png" class="img-fluid">
+                                </div>
+                                <div class="client-comment">
+                                    <h5>Best Creative Agency!</h5>
+                                </div>
+                            </div>
+                            <div class="client-message testimoanial-inner-2">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque
+                                    quae tempora......"</p>
+                            </div>
+                            <div class="testimonial-border-shape testimoanial-inner-3">
+
+                            </div>
+                            <div class="testimoanial-inner-4">
+                                <div class="testimoanial-client-img">
+                                    <img src="https://picsum.photos/90/90">
+                                </div>
+                                <div class="client-info">
+                                    <h6>Lorem Ipsum</h6>
+                                    <p>Client of steve ai lab</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row footer-row-1 ">
+                <div class="col-md-12 col-lg-3">
+                    <div class="footer-widget-1 pl-30">
+                        <img src="images/logo.png" class="img-fluid">
+                        <hr>
+                        <div class="social-icon">
+                            <ul>
+                                <li><a href="#"><img src="images/facebook.png"></a></li>
+                                <li><a href="#"><img src="images/instagram.png"></a></li>
+                                <li><a href="#"><img src="images/twitter.png"></a></li>
+                                <li><a href="#"><img src="images/linkedin.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <div class="footer-widget footer-widget-2">
+                        <h4>Quick Links</h4>
+                        <ul class="p-0">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About </a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Testimonial</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <div class="footer-widget footer-widget-3">
+                        <h4>Our Services</h4>
+                        <ul class="p-0">
+                            <li><a href="#">Computer Vision</a></li>
+                            <li><a href="#">Neural Network</a></li>
+                            <li><a href="#">Data Analysis</a></li>
+                            <li><a href="#">Machine-Learning </a></li>
+                            <li><a href="#">Technology</a></li>
+                            <li><a href="#">Data Collection</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5">
+                    <div class="footer-widget footer-widget-4">
+                        <h4>Subscribe Us</h4>
+                        <div class="form">
+                            <input type="email" placeholder="Enter your email address" name="" value=""
+                                class="form-control"><br>
+                            <a href="#" class="buttons">Subscribe<span class="arrow-show"><i
+                                        class="bi bi-arrow-right"></i></span></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-row-2 d-flex">
+
+                <div class="col-md-12 text-center">
+                    <p>Copyright © 2024. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+</body>
+<script>
+
+</script>
+<script>
+    AOS.init();
+</script>
+
+</html>
