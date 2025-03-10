@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background: #f9f9f9;
+        }
+
+        .container {
+            margin-top: 50px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tabs {
+            box-shadow: 0 0 10px #eaeaea;
+        }
+
+        .tabs>ul {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border-bottom: 1px solid #ccc;
+            font-size: 0;
+        }
+
+
+        .tabs>ul li {
+            display: inline-block;
+            font-size: 14px;
+            width: 33.33%;
+        }
+
+        .tabs>ul li a {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+            color: #484848;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+            text-decoration: none;
+            text-align: center;
+            color: #484848;
+            background: #eeeeee;
+            transition: all 0.3s ease 0.2s;
+            border-bottom: 3px solid #c7c7c7;
+        }
+
+
+
+        .tabs>ul li a[aria-selected] {
+            color: #484848;
+            background: #fff;
+            border-bottom: 3px solid #111;
+        }
+
+        .tabs>ul li a[aria-selected]:before {
+            transform: translateZ(0) translateY(0);
+        }
+
+        .tabs>section[aria-hidden="true"] {
+            display: none;
+        }
+
+        .tabs h2,
+        .tabs th,
+        .tabs td {
+            color: #484848;
+        }
+
+        .tabs h2 {
+            margin: 20px 20px;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .tabs th,
+        .tabs td {
+            padding: 11px 8px;
+            text-align: center;
+        }
+      
+        .tabs th, .tabs td {
+          background: #f9f9f9 !important;
+        }
+
+        .table_head {}
+
+        .table_head th {
+            color: #fff;
+            font-weight: 400;
+            background: #373737 !important;
+        }
+    </style>
+    <div class="container">
+        <div class="tabs">
+            <ul>
+                <li><a href="#section1">For Sale</a></li>
+                <li><a href="#section2">For Rent</a></li>
+                <li><a href="#section3">Recently Sold</a></li>
+            </ul>
+            <section id="section1">
+                <h2>2 Bedrooms In Hidden Bay - For Sale - (11)</h2>
+                <table class="table">
+                    <thead>
+                        <tr class="table_head">
+                            <th scope="col">Details</th>
+                            <th scope="col">List Price</th>
+                            <th scope="col">Unit # </th>
+                            <th scope="col">MLS # </th>
+                            <th scope="col">Bed/Bath </th>
+                            <th scope="col">Living Area </th>
+                            <th scope="col">$/SqFt </th>
+                            <th scope="col">Days Listed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Details</th>
+                            <td>$735,000</td>
+                            <td>402</td>
+                            <td>	A11567419</td>
+                            <td>2 / 2</td>
+                            <td>1610</td>
+                            <td>$456.52</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Details</th>
+                            <td>	$789,569	</td>
+                            <td>1014</td>
+                            <td>A11567147	</td>
+                            <td>2 / 2</td>
+                            <td>1610</td>
+                            <td>$490.42	</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Details</th>
+                            <td>$790,000	</td>
+                            <td>1709</td>
+                            <td>A11481724</td>
+                            <td>2 / 2</td>
+                            <td>1610</td>
+                            <td>$490.68	</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="section2">
+                <h2>1 Bedrooms In Hidden Bay - For Sale - (11)</h2>
+                <table class="table">
+                    <thead>
+                        <tr class="table_head">
+                            <th scope="col">Details</th>
+                            <th scope="col">List Price</th>
+                            <th scope="col">Unit # </th>
+                            <th scope="col">MLS # </th>
+                            <th scope="col">Bed/Bath </th>
+                            <th scope="col">Living Area </th>
+                            <th scope="col">$/SqFt </th>
+                            <th scope="col">Days Listed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="section3">
+                <p>The data relating to real estate for sale on this web site comes in part from various real estate
+                    boards and MLSs across the United States.</p><br>
+                <p>Information is deemed reliable but not guaranteed. Copyright, all rights reserved. The information
+                    being provided is for consumers' personal, non-commercial use and may not be used for any purpose
+                    other than to identify prospective properties consumers may be interested in purchasing. Use of
+                    search facilities of data on the site, other than a consumer looking to purchase real estate, is
+                    prohibited.</p>
+            </section>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        var Tabs = function ($) {
+            return {
+
+                init: function () {
+                    this.cacheDom();
+                    this.setupAria();
+                    this.appendIndicator();
+                    this.bindEvents();
+                },
+
+                cacheDom: function () {
+                    this.$el = $('.tabs');
+                    this.$tabList = this.$el.find('ul');
+                    this.$tab = this.$tabList.find('li');
+                    this.$tabFirst = this.$tabList.find('li:first-child a');
+                    this.$tabLink = this.$tab.find('a');
+                    this.$tabPanel = this.$el.find('section');
+                    this.$tabPanelFirstContent = this.$el.find('section > *:first-child');
+                    this.$tabPanelFirst = this.$el.find('section:first-child');
+                    this.$tabPanelNotFirst = this.$el.find('section:not(:first-of-type)');
+                },
+
+                bindEvents: function () {
+                    this.$tabLink.on('click', function () {
+                        this.changeTab();
+                        this.animateIndicator($(event.currentTarget));
+                    }.bind(this));
+                    this.$tabLink.on('keydown', function () {
+                        this.changeTabKey();
+                    }.bind(this));
+                },
+
+                changeTab: function () {
+                    var self = $(event.target);
+                    event.preventDefault();
+                    this.removeTabFocus();
+                    this.setSelectedTab(self);
+                    this.hideAllTabPanels();
+                    this.setSelectedTabPanel(self);
+                },
+
+                animateIndicator: function (elem) {
+                    var offset = elem.offset().left;
+                    var width = elem.width();
+                    var $indicator = this.$tabList.find('.indicator');
+
+                    console.log(elem.width());
+
+                    $indicator.transition({
+                        x: offset,
+                        width: elem.width()
+                    })
+                },
+
+                appendIndicator: function () {
+                    this.$tabList.append('<div class="indicator"></div>');
+                },
+
+                changeTabKey: function () {
+                    var self = $(event.target),
+                        $target = this.setKeyboardDirection(self, event.keyCode);
+
+                    if ($target.length) {
+                        this.removeTabFocus(self);
+                        this.setSelectedTab($target);
+                    }
+                    this.hideAllTabPanels();
+                    this.setSelectedTabPanel($(document.activeElement));
+                    this.animateIndicator($target);
+                },
+
+                hideAllTabPanels: function () {
+                    this.$tabPanel.attr('aria-hidden', 'true');
+                },
+
+                removeTabFocus: function (self) {
+                    var $this = self || $('[role="tab"]');
+
+                    $this.attr({
+                        'tabindex': '-1',
+                        'aria-selected': null
+                    });
+                },
+
+                selectFirstTab: function () {
+                    this.$tabFirst.attr({
+                        'aria-selected': 'true',
+                        'tabindex': '0'
+                    });
+                },
+
+                setupAria: function () {
+                    this.$tabList.attr('role', 'tablist');
+                    this.$tab.attr('role', 'presentation');
+                    this.$tabLink.attr({
+                        'role': 'tab',
+                        'tabindex': '-1'
+                    });
+                    this.$tabLink.each(function () {
+                        var $this = $(this);
+
+                        $this.attr('aria-controls', $this.attr('href').substring(1));
+                    });
+                    this.$tabPanel.attr({
+                        'role': 'tabpanel'
+                    });
+                    this.$tabPanelFirstContent.attr({
+                        'tabindex': '0'
+                    });
+                    this.$tabPanelNotFirst.attr({
+                        'aria-hidden': 'true'
+                    });
+                    this.selectFirstTab();
+                },
+
+                setKeyboardDirection: function (self, keycode) {
+                    var $prev = self.parents('li').prev().children('[role="tab"]'),
+                        $next = self.parents('li').next().children('[role="tab"]');
+
+                    switch (keycode) {
+                        case 37:
+                            return $prev;
+                            break;
+                        case 39:
+                            return $next;
+                            break;
+                        default:
+                            return false;
+                            break;
+                    }
+                },
+
+                setSelectedTab: function (self) {
+                    self.attr({
+                        'aria-selected': true,
+                        'tabindex': '0'
+                    }).focus();
+                },
+
+                setSelectedTabPanel: function (self) {
+                    $('#' + self.attr('href').substring(1)).attr('aria-hidden', null);
+                },
+
+            };
+        }(jQuery);
+
+        Tabs.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: greycliffcf;
+    transition: all 0.2s linear;
+}
+
+@font-face {
+    /* src: url(../font/GreycliffCF-DemiBold.otf); */
+    src: url('../font/GreycliffCF-DemiBold.woff') format('woff');
+    font-family: greycliffcf;
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    /* src: url(../font/GreycliffCF-ExtraBold.otf); */
+    src: url('../font/GreycliffCF-ExtraBold.woff') format('woff');
+    font-family: greycliffcf;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* 
+@font-face {
+    font-family: 'greycliffcf';
+    src: url('../font/greycliffcf-regularoblique-webfont.woff') format('woff'),
+         url('../font/greycliffcf-regularoblique-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+     @font-face {
+    src: url(../font/GreycliffCF-Bold.otf);
+    font-family: greycliffcf;
+    font-weight: bold;
+    font-style: normal;
+ }
+@font-face {
+    src: url(../font/GreycliffCF-BoldOblique.otf);
+    font-family: greycliffcf;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+@font-face {
+    src: url(../font/GreycliffCF-DemiBoldOblique.otf);
+    font-family: greycliffcf;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+@font-face {
+    src: url(../font/GreycliffCF-ExtraBoldOblique.otf);
+    font-family: greycliffcf;
+    font-weight: 800;
+    font-style: oblique;
+}
+@font-face {
+    src: url(../font/Fontspring-DEMO-greycliffcf-extralight.otf);
+    font-family: greycliffcf;
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    src: url(../font/Fontspring-DEMO-greycliffcf-extralightoblique.otf);
+    font-family: greycliffcf;
+    font-weight: 200;
+    font-style: oblique;
+}
+@font-face {
+    src: url(../font/GreycliffCF-Heavy.otf);
+    font-family: greycliffcf;
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    src: url(../font/GreycliffCF-HeavyOblique.otf);
+    font-family: greycliffcf;
+    font-weight: 900;
+    font-style: oblique;
+}
+@font-face {
+    src: url(../font/GreycliffCF-Light.otf);
+    font-family: greycliffcf;
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    src: url(../font/GreycliffCF-LightOblique.otf);
+    font-family: greycliffcf;
+    font-weight: 300;
+    font-style: oblique;
+}
+@font-face {
+    src: url(../font/GreycliffCF-Medium.otf);
+    font-family: greycliffcf;
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    src: url(../font/GreycliffCF-MediumOblique.otf);
+    font-family: greycliffcf;
+    font-weight: 500;
+    font-style: oblique;
+}
+@font-face {
+    src: url(../font/GreycliffCF-Regular.otf);
+    font-family: greycliffcf;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    src: url(../font/GreycliffCF-RegularOblique.otf);
+    font-family: greycliffcf;
+    font-weight: 400;
+    font-style: oblique;
+}   */
+ 
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1085px !important;
+    }
+}
+a{
+    text-decoration: none;
+}
+
+nav.navbar.navbar-expand-lg {
+    padding: 40px 0;
+}
+
+nav a.navbar-brand img {
+    max-width: 90px;
+}
+nav a.navbar-brand {
+    padding: 0;
+}
+
+
+nav.navbar.navbar-expand-lg ul.navbar-nav {
+    background: #F5F6FA;
+    border-radius: 100px;
+    padding: 11px 15px;
+}
+
+nav.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 16px;
+    color: #484D61;
+    margin-left: 8px;
+    padding: 6px 15px;
+    border-radius: 30px;
+    transition: all 0.2s linear;
+    font-weight: 600;
+}
+nav.navbar-expand-lg .navbar-nav .nav-link.contact_link {
+    color: #F5671F;
+    font-weight: 800;
+
+}
+nav.navbar-expand-lg .navbar-nav .nav-item:first-child .nav-link {
+    margin-left: 0;
+}
+nav.navbar-expand-lg .navbar-nav .nav-link:hover{
+    background: #fff;
+}
+
+.hero {
+    margin-top: 45px;
+    height: 100vh;
+    position: relative;
+    min-height: 775px;
+}
+.hero .hero_left {
+    position: sticky;
+    top: 50px;
+    max-width: 465px;
+    height: 725px;
+}
+.hero .hero_left .top_heading{
+    max-width: fit-content;
+    position: relative;
+}
+.hero .hero_left .top_heading h2{ 
+    color: #FF8400;
+    
+}
+.hero .hero_left h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #484D61;
+    margin-bottom: 0;
+}
+
+.hero .hero_left .top_heading img {
+    position: absolute;
+    top: -8px;
+    right: -21px;
+    width: 33px;
+}
+.hero .hero_left .btns {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+a.square_btn {
+    background: #F5671F;
+    font-size: 19px;
+    font-weight: 800;
+    color: #fff;
+    padding: 14px 41px;
+    border-radius: 12px;
+    filter: drop-shadow(0 3px 0 #DA5205);
+    box-shadow: 0 1px 0 #FF8400;
+    margin-right: 25px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+a.square_btn span {
+    position: relative;
+    z-index: 9;
+}
+a.square_btn:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #FF8400;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    transition: all 0.3s ease-in-out;
+}
+a.square_btn:hover:before {
+    width: 200px;
+    height: 200px;
+    
+}
+.hero .hero_left .btns a.round_btn {
+    background: #FFF3B4;
+    font-size: 19px;
+    display: inline-block;
+    font-weight: 800;
+    color: #FF8400;
+    padding: 14px 22px;
+    line-height: 20px;
+    border-radius: 30px;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+.hero .hero_left .btns a.round_btn .btn_icon {
+    margin: -1px 8px 0 8px;
+}
+
+.side-bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    margin-top: 100px;
+    padding-right: 20px;
+}
+  
+.side-bar  nav ul {
+    padding: 0;
+  }
+  
+  .side-bar nav li {
+    list-style: none;
+  }
+  
+  .side-bar nav li a {
+    text-decoration: none;
+    color: #8F95A9;
+    display: block;
+    padding: 10px 0;
+    font-weight: 800;
+    font-size: 19px;
+    transition: all ease-out 250ms;
+  }
+  
+  .side-bar nav li a:hover {
+    color: #8F95A9;
+    opacity: 70%;
+}
+  
+ 
+.main-content {
+    overflow: hidden;
+}
+  .main-content section {
+    background-color: #fff;
+    height: 100vh;
+    min-height: 775px;
+    margin:0;
+  }
+  
+ 
+/*   
+  .main-content section:last-of-type {
+    height: 100vh;
+  }
+   */
+  
+  
+  .side-bar .active {
+    color: #F5671F; 
+  }
+  .side-bar .active:hover {
+    color: #F5671F; 
+    opacity: 100%;
+  }
+
+  .shape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+
+.meetWizer_inner{
+    position: relative;
+}
+.meetWizer_inner .center_img{
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 50px;
+}
+.meetWizer_inner .bottom_img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: float2 4s linear infinite;
+}
+.meetWizer_inner .top_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: float1 4s linear infinite;
+}
+.meetWizer_inner h3.top_text,.meetWizer_inner h3.bottom_text{
+    font-size: 22px;
+    font-weight: 800;
+    color: #F5671F;
+    position: absolute;
+    max-width: 130px;
+}
+.meetWizer_inner h3.top_text{
+    top: 65px;
+    left: 160px;
+}
+.meetWizer_inner h3.bottom_text{
+    bottom: 50px;
+    right: 40px;
+}
+
+
+@keyframes float1 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes float2 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

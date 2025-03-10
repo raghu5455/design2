@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>voltaire</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Peaches and Cream';
+            src: url('./font/FontsFree-Net-Peaches-and-Cream-Bold-W00-Rg.ttf');
+        }
+
+
+        section.about_section {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 70px 0 60px;
+            overflow: hidden;
+        }
+
+        .about_section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            height: 65px;
+            left: 0;
+            width: 100%;
+            background: url("./images/about_divider.svg");
+            background-position: top;
+            transform: scaleY(-1);
+            opacity: 0.6;
+            z-index: 999;
+        }
+
+        video.video_background {
+            position: absolute;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        video.video_bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .z-index-1 {
+            z-index: 1;
+        }
+
+        .about__inner1 {
+            margin-bottom: 25px;
+            text-align: right;
+        }
+
+        .about__inner1 p {
+            color: #fff;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 2em;
+            margin-bottom: 0;
+        }
+
+        .about__inner1 img {}
+
+        .about__inner2 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about__inner2 .logo_img {
+            position: absolute;
+            z-index: 99;
+            filter: grayscale(1);
+        }
+
+        .about__inner3 p {
+            color: #fff;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 2em;
+            margin-bottom: 0;
+        }
+
+        .about__inner4 h2 {
+            color: #fff;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Peaches and Cream';
+            line-height: 1.2em;
+            margin: 35px 0 0;
+            letter-spacing: 0.05em;
+        }
+
+        .about_section .overlay {
+            background: #1b232a;
+            opacity: 78%;
+        }
+
+        .video_shape {
+            width: 100%;
+            height: 100%;
+            transform: rotateZ(-13deg);
+            position: relative;
+        }
+
+        .video_shape::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("./images/overlay.png");
+            background-size: auto;
+            background-repeat: repeat;
+            background-position: center center;
+            top: 0;
+            clip-path: url(#svg-path);
+            left: 0;
+        }
+
+        #svg-mask {
+            clip-path: url(#svg-path);
+            position: absolute;
+        }
+
+        #svg-path {
+            transition: all 1s ease;
+            position: relative;
+            transform: scale(1.65, 2.2);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="about_section">
+        <div class="container z-index-1 position-relative">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="about__inner1">
+                        <img src="images/WV Trans copy.png">
+                        <p>
+                            Welcome to Voltaire, the deepest destination for culture and wellness through an exquisite
+                            blend of premium cannabis and unmatched sophistication. We cater to all discerning
+                            individuals looking for meticulously curated strains, refined accessories, exclusive
+                            products, and unmatched value.</p><br>
+                        <p>Indulge in more than a purchase; immerse yourself in our unique community and lifestyle. At
+                            Voltaire, you can shop with confidence knowing that every purchase directly enriches the
+                            community and supports a wide range of non-profit organizations promoting social justice and
+                            combating climate change.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="about__inner2">
+                        <img src="images/White_LOGO.png" class="logo_img">
+                        <div class="video_shape">
+                            <video id="svg-mask" src="./videos/about_file.mp4" autoplay muted loop></video>
+
+                            <svg preserveAspectRatio='none' data-bbox='9.66 9.498 180.295 180.637'
+                                viewBox='9.66 9.498 180.295 180.637' height='400' width='450' y='0' x='0'
+                                xmlns='http://www.w3.org/2000/svg' data-type='shape'>
+                                <clippath id="svg-path">
+                                    <path
+                                        d='M173.2 83.8c.3-.2.5-.5.8-.8l.6-.9c4.9-6.3 8.8-13.4 11.4-21 1.8-5.1 3.3-10.8 3.6-16.2.4-3.1.5-6.2.1-9.3-.1-.6-.8-1.1-1.3-.6-1.1 1.3-2.3 2.6-3.8 3.4-1.6.9-3.4 1.3-5.1 1.8-2 .7-4 1.3-6 2 3.8-8.5 5.4-18 4.7-27.3 0-.2-.1-.4-.1-.6.2-1.2.4-2.3.5-3.5.1-.8-.7-1.3-1.3-.8 0 0-.1 0-.1.1-.3-.2-.6-.2-1 .1-.5.5-1.2.7-1.9.8h-.1c-.4 0-.7.1-1.1.1-.2 0-.3 0-.5.1h-.2c-11.7 1.5-23 5.5-32.9 11.9l-2.1-8.4v-.1c-.1-1.4-.2-2.9-.2-4.3 0-.6-.6-1-1.2-.7-.9.4-1.7.9-2.6 1.5-2.7.7-5.2 1.9-7.4 3.5-.9.7-1.8 1.4-2.6 2.2-6.5 4.2-12.2 9.6-16.6 16.1-.2-.2-.4-.3-.5-.5-.2-.5-.5-1-.8-1.4-.3-.4-.5-.8-.7-1.2-.6-1.6-.7-3.4-.9-5 0-.2 0-.4-.1-.6 0-1.9.1-3.9-.5-5.6-.2-1.9-.3-3.8-.5-5.7 0-.6-.6-1-1.2-.7l-.9.6c-.1 0-.3-.1-.4 0-5.3 1.9-9.9 5-13.8 9-2.4 1.5-4.5 3.5-6.3 5.7-5.3 4.4-10.5 9.3-13.2 15.1-1.3 1.9-2.4 4-3.4 6.1-2.1-4.2-3.6-8.8-4.5-13.5-.1-.5-.8-.7-1.2-.5-2.7 1.7-4.8 4.2-6.8 6.6-2.2 2.5-4.3 4.9-6.3 7.5-3.8 5.2-7.3 10.7-9.3 16.8v.2c-.9 2.8-1.3 5.7-1.2 8.7-.1.9-.1 1.7-.1 2.6.1 4.1 1.5 8.3 1 12.4-.5-.6-1-1.3-1.5-2-1.8-3.6-3-7.3-3.6-11.3v-.9c0-.1.1-.2.1-.3v-.6c0-.3 0-.6.1-1 0-.2 0-.4-.1-.5 0-.4 0-.7-.1-1.1 0-.6-.7-1-1.2-.7-1.6 1-3.3 2-4.7 3.2l-.1.1c-.1 0-.3.1-.4.2-1.3 1.2-2.5 2.5-3.4 3.9-.4.5-.8 1-1.2 1.6-2.8 2.9-5.2 6.2-6.2 10.3-1.4 5.7-.7 11.9 0 17.6.9 7.2 2.5 14.2 4.7 21 .3 2.1.7 4.1 1.1 6.1.8 3.6 2 7 3.2 10.5 1.1 3 2.3 6.3 1.8 9.6 0 .1 0 .2-.1.3-3.9 6.8-8.6 13.2-13.3 19.4-.5.6-.5 1.5-.4 2.2-.4 1.5-.3 3.1.3 4.8.1.2.1.3.2.5 0 .1.1.1.1.2 1.4 3.1 4.1 5.2 6.9 7 .7.5 1.4.6 2 .5 5.1.2 11.7-6.4 14.9-8.9 2.8-2.2 5.9-4.3 9.4-5.1 4.1-1 8.4-.1 12.4 1 8.8 2.5 17.3 5.9 26.3 8 8.6 2 17.5 3.1 26.3 2.3 9.5-.8 18.8-3.5 26.7-8.9.6-.4 1-.8 1.3-1.3.5-.3.9-.6 1.4-.9.9-.6 1.8-1.3 2.5-2.1.5-.6 1.5-1.8 1-2.7-.5-1-2.3-.5-3.2-.5h-.7c-.2-.1-.4 0-.5.1-1.1 0-2.1.1-3.2.1-.2 0-.4-.1-.6-.1-5.3-.5-9.5-4-12.8-8.3 9.3 1.3 19.3.9 28.1-2.2 5.1-1.8 9-5.4 12.8-9 3.6-3.4 7.1-7.2 9.1-11.7.4-.6.8-1.2 1.1-1.8.6-1.1 1-2.3 1.2-3.6.1-1.1.2-2.3-.7-3.1-.3-.2-.7-.1-1 .1-1.5 1.3-3.4 2-5.4 2.3-5.3-.6-10.5-.8-15.9-.5 5.6-3.6 11.1-7.4 16.4-11.5 9.7-7.6 18.4-17.2 21.2-29.4.1-.4.1-.8.1-1.2.1-.6.1-1.1 0-1.6 0-1.7-.1-3.3-.4-5-.1-.7-1.1-.7-1.4-.2-.5.9-1.4 1.3-2.3 1.6-1.2.4-2.5.8-3.7 1.2-.4.1-.8.2-1.3.3-2.5.3-5 .1-7.5-.4l1.5-3c.4.1.6-.1.7-.3zm-2.3 52.4c0-.1 0-.1 0 0 0-.1.1-.1 0 0 .1-.1 0-.1 0 0zm15.4-49.5c0 .2 0 .5.1.7-.2-.1-.4-.3-.7-.4l.6-.3z' />
+                                </clippath>
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="about__inner3">
+                        <p>With our expert cannasseurs at your service, expect nothing less than white-glove hospitality
+                            in an atmosphere where elegance meets comfort. Embrace the rewarding Voltaire community and
+                            embark on an unparalleled journey of wellness, purpose, and irresistibly good vibes.</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="about__inner4">
+                        <h2>Your Friendly Neighborhood Cannabis Joint</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <video autoplay muted loop class="video_background">
+            <source src="./videos/user.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <style>
+        .about_team_section {
+            overflow: hidden;
+        }
+
+        .about_team_inner1 {
+            padding: 25px 70px;
+            background: #1b232a;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .about_team_inner1 h2 {
+            color: #fff;
+            font-size: 35px;
+            font-weight: 900;
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .about_team_inner1 h2::after {
+            content: "";
+            position: absolute;
+            bottom: -42%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            width: 125px;
+            background: #fff;
+        }
+
+        .about_team_inner1 h5 {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .about_team_inner1 p {
+            color: #fff;
+            font-size: 16px;
+            text-align: left;
+            line-height: 1.8em;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        .about_team_inner1 p a {
+            color: #fff;
+            font-size: 16px;
+            text-decoration: underline;
+        }
+
+        .about_team_inner2 {
+            height: 100%;
+        }
+
+        .about_team_inner2 img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+    <section class="about_team_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 p-0">
+                    <div class="about_team_inner1">
+                        <h2>Meet [cat] Voltaire</h2>
+                        <h5>CHIEF FELINE OFFICER</h5>
+                        <p>Our fur-midable ambassador.</p>
+                        <p>A pawsy rapscallion.</p>
+                        <p>The first of his name.</p>
+                        <p>King of Maine Coons.</p>
+                        <p>Breaker of furniture.</p>
+                        <p>Lover of nap time.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 p-0">
+                    <div class="about_team_inner2">
+                        <img src="images/team-1.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-0">
+                    <div class="about_team_inner1">
+                        <h2>Meet [real] Voltaire
+                        </h2>
+                        <h5>PHILOSOPHER & HISTORIAN</h5>
+                        <p><a href="#">François-Marie Arouet,</a> a French Enlightenment philosopher, was known for
+                            his
+                            wit and unyielding advocacy for civil rights and against injustice — particularly for
+                            freedom of speech & religion.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 p-0">
+                    <div class="about_team_inner2">
+                        <img src="images/team-2.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .weekly_specials {
+            overflow: hidden;
+        }
+
+        .weekly_specials_inner1 {
+            background: #1b232a;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 90px;
+            text-align: center;
+            border: 1px solid #fff;
+            border-right: none;
+        }
+
+        .weekly_specials_inner1 img {}
+
+        .weekly_specials_inner1 h3 {
+            color: #f3bd48;
+            font-weight: bold;
+            line-height: 47px;
+            font-size: 33px;
+            margin-bottom: 0;
+        }
+
+        .weekly_specials_inner2 {
+            background: #1b232a;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #fff;
+            border-right: none;
+            text-align: center;
+            padding: 45px 100px 50px;
+        }
+
+        .weekly_specials_inner2 img {
+            margin: 30px 0 20px;
+        }
+
+        .weekly_specials_inner2 h3 {
+            margin: 0;
+            color: #fff;
+            font-weight: bold;
+            font-size: 30px;
+
+        }
+
+        .weekly_specials_inner2 h5 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 20px;
+            color: #fff;
+        }
+    </style>
+    <section class="weekly_specials">
+        <div class="container-fluid">
+            <div class="row p-0">
+                <div class="col-md-3 p-0">
+                    <div class="weekly_specials_inner1">
+                        <img src="images/ws_logo.png">
+                        <h3>WEEKLY SPECIALS</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="weekly_specials_inner2">
+                        <h3>SUNDAY</h3>
+                        <img
+                            src="https://static.wixstatic.com/media/b23c79_580346684e39452cabbf090d2a517154~mv2.png/v1/fill/w_131,h_94,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/prerolls.png">
+                        <h5>Pre Rolls</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="weekly_specials_inner2">
+                        <h3>MONDAY</h3>
+                        <img
+                            src="https://static.wixstatic.com/media/b23c79_1eff671e4b534372aa5dce23f59b5690~mv2.png/v1/fill/w_147,h_106,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/flower.png">
+                        <h5>Flower</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="weekly_specials_inner2">
+                        <h3>TUESDAY</h3>
+                        <img
+                            src="https://static.wixstatic.com/media/b23c79_ea93435ccf6446debf8b7361cd3f5f80~mv2.png/v1/crop/x_0,y_5,w_81,h_152/fill/w_72,h_136,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/vapes.png">
+                        <h5>Vapes / Carts</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="weekly_specials_inner2">
+                        <h3>WEDNESDAY</h3>
+                        <img
+                            src="https://static.wixstatic.com/media/b23c79_cd5392796b29415c83e9ffdbb1c41937~mv2.png/v1/fill/w_131,h_94,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Edible.png">
+                        <h5>Edibles</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="weekly_specials_inner2">
+                        <h3>THURSDAY</h3>
+                        <img src="images/Concentrates.png">
+                        <h5>Concentrates / Topicals</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="weekly_specials_inner2">
+                        <h3>FRIDAY</h3>
+                        <img
+                            src="https://static.wixstatic.com/media/b23c79_a857858d49884cfd8ce4588d6662cfa9~mv2.png/v1/fill/w_137,h_111,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Accessories.png">
+                        <h5>Accessories / Surprise Special</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 p-0">
+                    <div class="weekly_specials_inner2">
+                        <h3>SATURDAY</h3>
+                        <img src="images/tshirt.png">
+
+                        <h5>Accessories / Surprise Special</h5>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <style>
+        .fivecolgrid.discount_fivecolgrid {
+            background: rgb(27 35 42 / 49%);
+            background-image: linear-gradient(#1b232afc, #1b232afc), url(./images/subscribe-reward-bg-2.png);
+        }
+
+        .discount_fivecolgrid .col.circlebox {
+            border-right: none;
+            padding: 50px 60px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .discount_fivecolgrid .cicrcleimg img {
+            border-radius: 50%;
+            border: none;
+        }
+
+        .discount_fivecolgrid .circlecnt h3 {
+            color: rgb(255 255 255);
+            margin: 40px 0px 30px 0px;
+            letter-spacing: 0.15em;
+            font-size: 16px;
+            line-height: 23px;
+            padding: 0;
+            min-height: 46px;
+        }
+
+        .discount_fivecolgrid .circlecnt p.circlecntContent {
+            min-height: 68px;
+            margin-bottom: 45px
+        }
+
+        .discount_fivecolgrid .circlecnt p {
+            color: #f8f7f2;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 0;
+
+        }
+    </style>
+    <section class="fivecolgrid discount_fivecolgrid">
+        <div class="container-fluid">
+            <div class="row ten-columns">
+                <div class="col circlebox">
+                    <div class="cicrcleimg">
+                        <img src="./images/circle1.webp" class="" />
+                    </div>
+                    <div class="circlecnt">
+                        <h3>NEW CUSTOMER<br>DISCOUNT</h3>
+                        <P class="circlecntContent">For new customers that sign up for Voltaire's rewards program</P>
+                        <P>15% Off First Order
+
+                        </P>
+                    </div>
+                </div>
+
+                <div class="col circlebox">
+                    <div class="cicrcleimg">
+                        <img src="./images/circle2.webp" class="" />
+                    </div>
+                    <div class="circlecnt">
+                        <h3>THE HERO </h3>
+                        <P class="circlecntContent">Includes veterans, police, first responders, nurses, firefighters,
+                            and teachers.</P>
+                        <P>15% Discount</P>
+                    </div>
+                </div>
+
+
+                <div class="col circlebox">
+                    <div class="cicrcleimg">
+                        <img src="./images/circle3.webp" class="" />
+                    </div>
+                    <div class="circlecnt">
+                        <h3>THE COMPASSION<br />DISCOUNT </h3>
+                        <P class="circlecntContent">NJMMP patients and customers receiving a valid form of govt
+                            assistance.</P>
+                        <P>15% Discount</P>
+                    </div>
+                </div>
+
+
+                <div class="col circlebox">
+                    <div class="cicrcleimg">
+                        <img src="./images/circle4.webp" class="" />
+                    </div>
+                    <div class="circlecnt">
+                        <h3>TTHE SENIOR<br />DISCOUNT </h3>
+                        <P class="circlecntContent">Customers that are currently ages 65 and above.</P>
+                        <p>10% Discount</P>
+                    </div>
+                </div>
+
+
+                <div class="col circlebox">
+                    <div class="cicrcleimg">
+                        <img src="https://static.wixstatic.com/media/11062b_5a2b1f2a11b3401f932e2032b66f53c3~mv2.jpg/v1/crop/x_794,y_0,w_3413,h_3337/fill/w_176,h_172,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Student.jpg"
+                            class="" />
+                    </div>
+                    <div class="circlecnt">
+                        <h3>THE BIRTHDAY<br />DISCOUNT</h3>
+                        <P class="circlecntContent">Customers celebrating their birthday with Voltaire.</P>
+                        <p>20% Discount </P>
+                    </div>
+                </div>
+
+                <div class="col circlebox">
+                    <div class="cicrcleimg">
+                        <img src="https://static.wixstatic.com/media/b23c79_a48a30fe0ee64d0592d933d0630a39be~mv2.jpg/v1/crop/x_75,y_0,w_491,h_480/fill/w_176,h_172,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Welcome-Flickr.jpg"
+                            class="" />
+                    </div>
+                    <div class="circlecnt">
+                        <h3>NEW CUSTOMER<br>DISCOUNT</h3>
+                        <P class="circlecntContent">For new customers that sign up for Voltaire's rewards program</P>
+                        <P>15% Off First Order
+
+                        </P>
+                    </div>
+                </div>
+
+                <div class="col circlebox">
+                    <div class="cicrcleimg">
+                        <img src="./images/circle2.webp" class="" />
+                    </div>
+                    <div class="circlecnt">
+                        <h3>THE HERO </h3>
+                        <P class="circlecntContent">Includes veterans, police, first responders, nurses, firefighters,
+                            and teachers.</P>
+                        <P>15% Discount</P>
+                    </div>
+                </div>
+
+
+                <div class="col circlebox">
+                    <div class="cicrcleimg">
+                        <img src="./images/circle3.webp" class="" />
+                    </div>
+                    <div class="circlecnt">
+                        <h3>THE COMPASSION<br />DISCOUNT </h3>
+                        <P class="circlecntContent">NJMMP patients and customers receiving a valid form of govt
+                            assistance.</P>
+                        <P>15% Discount</P>
+                    </div>
+                </div>
+
+
+                <div class="col circlebox">
+                    <div class="cicrcleimg">
+                        <img src="./images/circle4.webp" class="" />
+                    </div>
+                    <div class="circlecnt">
+                        <h3>TTHE SENIOR<br />DISCOUNT </h3>
+                        <P class="circlecntContent">Customers that are currently ages 65 and above.</P>
+                        <p>10% Discount</P>
+                    </div>
+                </div>
+
+
+                <div class="col circlebox">
+                    <div class="cicrcleimg">
+                        <img src="./images/cicrcle5.webp" class="" />
+                    </div>
+                    <div class="circlecnt">
+                        <h3>THE BIRTHDAY<br />DISCOUNT</h3>
+                        <P class="circlecntContent">Customers celebrating their birthday with Voltaire.</P>
+                        <p>20% Discount </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <style>
+        .disclaimer_points {
+            overflow: hidden;
+        }
+
+        .disclaimer_points .disclaimer_points_inner {
+            background: #1b232a;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #fff;
+            border-right: none;
+            padding: 45px 145px 50px;
+        }
+
+        .disclaimer_points .disclaimer_points_inner h3 {
+            font-size: 28px;
+            line-height: 2em;
+            text-align: center;
+            color: #f8f7f2;
+            font-weight: bold;
+            margin: 0px 0 45px;
+        }
+
+        .disclaimer_points .disclaimer_points_inner ul {
+            margin: 0;
+
+        }
+
+        .disclaimer_points .disclaimer_points_inner ul li::marker {
+            color: #fff;
+        }
+
+        .disclaimer_points .disclaimer_points_inner ul li p {
+            font-size: 16px;
+            margin: 0;
+            line-height: 2em;
+            color: #FAFAFA;
+        }
+
+        .disclaimer_points .disclaimer_points_inner.lh ul li p {
+            line-height: 2.5em;
+        }
+    </style>
+    <section class="disclaimer_points">
+        <div class="container-fluid">
+            <div class="row p-0">
+                <div class="col-md-6 p-0">
+                    <div class="disclaimer_points_inner">
+                        <h3>REWARDS PROGRAM</h3>
+                        <ul>
+                            <li>
+                                <p>Create a Dutchie login to check or redeem points online.</p>
+                            </li>
+                            <li>
+                                <p>Points earned per transaction are based on the final order total minus discounts /
+                                    taxes.</p>
+                            </li>
+                            <li>
+                                <p>Due to regulations, your final order total after redeeming points must still exceed
+                                    $0.01.</p>
+                            </li>
+                            <li>
+                                <p>Certain restrictions may apply when redeeming points in conjunction with a promotion
+                                    or discount.</p>
+                            </li>
+                            <li>
+                                <p>This rewards program (and any related terms or discounts) may change at any time.
+                                    Please check here for updates.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0">
+                    <div class="disclaimer_points_inner lh">
+                        <h3>WEEKLY SPECIALS</h3>
+                        <ul>
+                            <li>
+                                <p>Subscribe for the specific details of each weekly specials.</p>
+                            </li>
+                            <li>
+                                <p>Discounts cannot be stacked with other discounts or promos.</p>
+                            </li>
+                            <li>
+                                <p>Products and promos are available while supplies last.</p>
+                            </li>
+                            <li>
+                                <p>Certain restrictions may apply when redeeming points in conjunction with a promotion
+                                    or discount. </p>
+                            </li>
+                            <li>
+                                <p>Our weekly specials (and any related terms or discounts) may change at any time.
+                                    Please check this page for any changes.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        .job_opening {
+
+            background: #f8f7f2;
+        }
+
+        .job_opening_inner1 {
+            border-right: 1px solid;
+            width: 100%;
+            height: 100%;
+
+            padding: 50px 140px 40px;
+        }
+
+        .job_opening_inner1 h3 {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            color: #1b232a;
+            margin-bottom: 30px;
+        }
+
+        .job_opening_inner1 p {
+            color: #1b232a;
+            font-size: 17px;
+            line-height: 3em;
+            margin-bottom: 0;
+        }
+
+        .job_opening_inner2 {
+            border-right: 1px solid;
+            width: 100%;
+            text-align: center;
+            height: 100%;
+            padding: 65px 140px 50px;
+        }
+
+        .job_opening_inner2 p {
+            font-size: 16px;
+            margin-bottom: 26px;
+            color: #1b232a;
+        }
+
+        .job_opening_inner2 a.join_btn {
+            letter-spacing: 0.05em;
+            font-family: 'open sans', sans-serif;
+            font-size: 15px;
+            background: #1b232a;
+            color: #ffffff;
+            padding: 13px 20px;
+            border: 1px solid #1B232A;
+            display: inline-block;
+            border-radius: 5px;
+            transition: all 0.2s ease;
+        }
+        .job_opening_inner2 a.join_btn:hover {
+            background: transparent;
+            color: #1b232a;
+            text-decoration: none;
+        }
+
+        .job_opening_inner3 {
+            padding: 60px 80px 50px;
+        }
+
+        .job_opening_inner3 h5 {
+            font-size: 20px;
+            margin-bottom: 0;
+            color: #1b232a;
+            text-align: right;
+            line-height: 2em;
+            font-weight: bold;
+        }
+    </style>
+    <section class="job_opening">
+        <div class="container-fluid">
+            <div class="row p-0">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-md-6 p-0">
+                            <div class="job_opening_inner1">
+                                <h3>JOB OPENINGS</h3>
+                                <p>We do not currently have any openings available, but we expect to open our job portal
+                                    again
+                                    soon. In the meantime, please join our Talent Community!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 p-0">
+                            <div class="job_opening_inner2">
+                                <p>Interested in working for Voltaire but don't see an open position for you?</p>
+                                <p>Click the button below to become part of our talent community database! We wish you
+                                    luck
+                                    and
+                                    happiness as you search for the right position.</p>
+                                <a href="#" class="join_btn">JOIN OUR TALENT COMMUNITY</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 p-0">
+                    <div class="job_opening_inner3">
+                        <h5>Voltaire is not <span style="font-style: italic;">just</span> a dispensary, it's also a destination for ambitious individuals who
+                            share our passion for cannabis and life.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

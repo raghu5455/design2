@@ -1,0 +1,450 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarNav = document.querySelector('.navbar-nav');
+  
+    navbarToggler.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+  
+      if (isExpanded) {
+        document.body.classList.add('nav-expanded');
+        navbarNav.style.display = 'block';
+      } else {
+        document.body.classList.remove('nav-expanded');
+        navbarNav.style.display = 'none';
+      }
+    });     
+  }); 
+   
+   
+   // Get all sections that have an ID defined
+      const sections = document.querySelectorAll("section[id]");
+  
+      window.addEventListener("scroll", navHighlighter);
+      
+      function navHighlighter() {
+        
+        // Get current scroll position
+        let scrollY = window.pageYOffset;
+        
+        // Now we loop through sections to get height, top and ID values for each
+        sections.forEach(current => {
+          const sectionHeight = current.offsetHeight;
+          const sectionTop = current.offsetTop - 50;
+          const sectionId = current.getAttribute("id");
+          
+          /*
+          - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+          - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+          */
+          if (
+            scrollY > sectionTop &&
+            scrollY <= sectionTop + sectionHeight
+          ){
+            document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
+          } else {
+            document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
+          }
+        });
+      }
+      
+      // Add event listeners to navigation links
+      document.querySelectorAll(".navigation a").forEach(anchor => {
+        anchor.addEventListener("click", function(e) {
+          e.preventDefault(); // Prevent default anchor click behavior
+      
+          // Get the section ID from the href attribute
+          const sectionId = this.getAttribute("href").substring(1);
+          const section = document.getElementById(sectionId);
+      
+          // Calculate the offset position
+          const offsetPosition = section.offsetTop + 130;
+      
+          // Scroll to the section with smooth behavior
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        });
+      });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //     <script>
+  //     // Get all sections that have an ID defined
+  // const sections = document.querySelectorAll("section[id]");
+  
+  // // Add an event listener listening for scroll
+  // window.addEventListener("scroll", navHighlighter);
+  
+  // function navHighlighter() {
+  
+  // // Get current scroll position
+  // let scrollY = window.pageYOffset;
+  
+  // // Now we loop through sections to get height, top and ID values for each
+  // sections.forEach(current => {
+  // const sectionHeight = current.offsetHeight;
+  // const sectionTop = current.offsetTop - 50;
+  // sectionId = current.getAttribute("id");
+  
+  // /*
+  // - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
+  // - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
+  // */
+  // if (
+  //   scrollY > sectionTop &&
+  //   scrollY <= sectionTop + sectionHeight
+  // ){
+  //   document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
+  // } else {
+  //   document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
+  // }
+  // });
+  // }
+  
+  // </script>
+
+
+
+@font-face {
+  src: url('../font/greycliffcf-bold-webfont.woff') format('woff'),
+  url('../font/greycliffcf-bold-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {    
+  src: url('../font/greycliffcf-boldoblique-webfont.woff') format('woff'),
+  url('../font/greycliffcf-boldoblique-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: bold;
+  font-style: oblique;
+}
+@font-face {
+  src: url('../font/greycliffcf-demibold-webfont.woff') format('woff'),
+  url('../font/greycliffcf-demibold-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  src: url('../font/greycliffcf-demiboldoblique-webfont.woff') format('woff'),
+  url('../font/greycliffcf-demiboldoblique-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: 600;
+  font-style: oblique;
+}
+@font-face {
+  src: url('../font/greycliffcf-extrabold-webfont.woff') format('woff'),
+  url('../font/greycliffcf-extrabold-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  src: url('../font/greycliffcf-extraboldoblique-webfont.woff') format('woff'),
+  url('../font/greycliffcf-extraboldoblique-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: 800;
+  font-style: oblique;
+}
+
+@font-face {
+  src: url('../font/greycliffcf-heavy-webfont.woff') format('woff'),
+  url('../font/greycliffcf-heavy-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  src: url('../font/greycliffcf-heavyoblique-webfont.woff') format('woff'),
+  url('../font/greycliffcf-heavyoblique-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: 900;
+  font-style: oblique;
+}
+@font-face {
+  src: url('../font/greycliffcf-light-webfont.woff') format('woff'),
+  url('../font/greycliffcf-light-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  src: url('../font/greycliffcf-lightoblique-webfont.woff') format('woff'),
+  url('../font/greycliffcf-lightoblique-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: 300;
+  font-style: oblique;
+}
+@font-face {
+  src: url('../font/greycliffcf-medium-webfont.woff') format('woff'),
+  url('../font/greycliffcf-medium-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  src: url('../font/greycliffcf-mediumoblique-webfont.woff') format('woff'),
+  url('../font/greycliffcf-mediumoblique-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: 500;
+  font-style: oblique;
+}
+@font-face {
+  src: url('../font/greycliffcf-regular-webfont.woff') format('woff'),
+  url('../font/greycliffcf-regular-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url('../font/greycliffcf-regularoblique-webfont.woff') format('woff'),
+  url('../font/greycliffcf-regularoblique-webfont.woff2') format('woff2');
+  font-family: greycliffcf;
+  font-weight: 400;
+  font-style: oblique;
+}  
+
+
+
+
+main js
+const sections = document.querySelectorAll("section[id]");
+const arrowDownBtn = document.querySelector(".arrow_down_btn");
+const navLinks = document.querySelectorAll(".navigation a");
+
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  let scrollY = window.pageYOffset;
+
+  sections.forEach((current, index) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    const sectionId = current.getAttribute("id");
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      navLinks.forEach(link => link.classList.remove("active"));
+      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
+      arrowDownBtn.setAttribute("data-section-index", index);
+
+      // Set the data-direction attribute based on the current section index
+      if (index === 0) {
+        arrowDownBtn.setAttribute("data-direction", "down");
+        arrowDownBtn.classList.remove("last-section");
+      } else if (index === sections.length - 1) {
+        arrowDownBtn.setAttribute("data-direction", "up");
+        arrowDownBtn.classList.add("last-section");
+      }
+    }
+  });
+}
+
+navLinks.forEach((anchor, index) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const sectionId = this.getAttribute("href").substring(1);
+    const section = document.getElementById(sectionId);
+    const offsetPosition = section.offsetTop;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+
+    arrowDownBtn.setAttribute("data-section-index", index);
+
+    // Set the data-direction attribute based on the current section index
+    if (index === 0) {
+      arrowDownBtn.setAttribute("data-direction", "down");
+      arrowDownBtn.classList.remove("last-section");
+    } else if (index === sections.length - 1) {
+      arrowDownBtn.setAttribute("data-direction", "up");
+      arrowDownBtn.classList.add("last-section");
+    }
+  });
+});
+
+arrowDownBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  let currentIndex = parseInt(this.getAttribute("data-section-index"));
+  let direction = this.getAttribute("data-direction");
+  let nextIndex;
+
+  if (direction === "down") {
+    nextIndex = currentIndex + 1;
+    if (nextIndex >= sections.length - 1) {
+      // Reached the last section, set direction to up
+      this.setAttribute("data-direction", "up");
+      this.classList.add("last-section");
+    }
+  } else {
+    nextIndex = currentIndex - 1;
+    if (nextIndex <= 0) {
+      // Reached the first section, set direction to down
+      this.setAttribute("data-direction", "down");
+      this.classList.remove("last-section");
+    }
+  }
+
+  const nextSection = sections[nextIndex];
+  const offsetPosition = nextSection.offsetTop;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth"
+  });
+
+  this.setAttribute("data-section-index", nextIndex);
+});
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarNav = document.querySelector('.navbar-nav');
+
+  navbarToggler.addEventListener('click', function () {
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+    if (isExpanded) {
+      document.body.classList.add('nav-expanded');
+      navbarNav.style.display = 'block';
+    } else {
+      document.body.classList.remove('nav-expanded');
+      navbarNav.style.display = 'none';
+    }
+  });
+});
+
+
+
+// $(function(){
+  //   var tickerHeight = $('.verical-slider ul li').outerHeight();
+  //   var tickerTotalHeight = tickerHeight * $('.verical-slider ul li').length;
+    
+  //   $('.verical-slider ul').append($('.verical-slider ul').html());
+  
+  //   $('.verical-slider ul').css('top', 0);
+  
+  //   function continuousScroll(){
+  //     $('.verical-slider ul').animate({
+  //       top: -tickerTotalHeight
+  //     }, tickerTotalHeight * 20, 'linear', function(){
+  //       $('.verical-slider ul').css('top', 0);
+  //       continuousScroll();
+  //     });
+  //   }
+  
+  //   continuousScroll();
+  // });
+
+
+
+
+
+
+$(function() {
+    var tickerHeight = $('.verical-slider2 ul li').outerHeight();
+    var isFirstMove = true; // Flag to track if it's the first move
+    var loopCount = 0; // Counter for number of loops
+    
+    // Initially set marginTop to 0
+    $('.verical-slider2 ul').css('marginTop', 0);
+  
+    function moveTop() {
+        // Fade out the first item
+        $('.verical-slider2 ul li:first-child').animate({
+            opacity: 0
+        }, 700, function() { 
+            // After fading out, scroll the list
+            $('.verical-slider2 ul').animate({
+                marginTop: -tickerHeight - 20
+            }, 1300, function() {
+                // Move the first item to the end and adjust the margin
+                $('.verical-slider2 ul li:first-child').appendTo('.verical-slider2 ul');
+                $('.verical-slider2 ul').css('marginTop', 0); // Reset marginTop
+        
+                // Check if it's the first move to fade in the second slide
+                if (isFirstMove) {
+                    isFirstMove = false; // Set flag to false after the first move
+                    $('.verical-slider2 ul li:nth-child(2)').animate({
+                        opacity: 1
+                    }, 500);
+                } else {
+                    // For subsequent moves, ensure all slides have opacity 1
+                    $('.verical-slider2 ul li').css('opacity', 1);
+                }
+            });
+        });
+        
+        loopCount++;
+      
+    }
+  
+    setInterval(function() {
+        moveTop();
+    }, 3000);
+});
+
+
+
+
+<div class="ab" style="
+    width: 47%;
+    height: 32.2%;
+    background: url(file:///C:/designs/Wizer/assets/img/img-5.png);
+    background-size: cover;
+    position: absolute;
+    top: 85px;
+    right: 10px;
+    border-radius: 18px;
+    transform: rotate(-14deg);
+    z-index: 9;
+"></div>
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  function setMinHeight() {
+    const viewportHeight = window.innerHeight;
+    const adjustedMinHeight = viewportHeight - 195;
+    const getStartedElement = document.getElementById('getStarted');
+    getStartedElement.style.minHeight = `${adjustedMinHeight}px`;
+  }
+
+  setMinHeight();
+  window.addEventListener('resize', setMinHeight);
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  function setMaxHeight() {
+    const viewportHeight = window.innerHeight;
+    const adjustedMaxHeight = viewportHeight - 195;
+    const getStartedElement = document.getElementById('getStarted');
+    getStartedElement.style.maxHeight = `${adjustedMaxHeight}px`;
+  }
+
+  setMaxHeight();
+  window.addEventListener('resize', setMaxHeight);
+});

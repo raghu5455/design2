@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Display</title>
+</head>
+
+<body>
+    <h1 id="priceHeading">$100</h1>
+    <script>
+        async function fetchExchangeRates() {
+            try {
+                const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
+                const data = await response.json();
+                return data.rates;
+            } catch (error) {
+                console.error('Error fetching exchange rates:', error);
+                return null;
+            }
+        }
+        async function getUserLocation() {
+            try {
+                const response = await fetch('https://ipapi.co/json/');
+                const data = await response.json();
+                return data.country_code;
+            } catch (error) {
+                console.error('Error fetching user location:', error);
+                return null;
+            }
+        }
+        async function updatePrice() {
+            const exchangeRates = await fetchExchangeRates();
+            if (!exchangeRates) {
+                return;
+            }
+            const userLocation = await getUserLocation();
+            if (!userLocation) {
+                return;
+            }
+
+            let number = document.getElementById('priceHeading').innerHTML;
+            var basePriceUSD = Number(number.replace(/[^0-9\.-]+/g, ""));
+            if (userLocation === "CA") {
+                basePriceUSD *= exchangeRates.CAD;
+                document.getElementById("priceHeading").textContent = `CAD $${basePriceUSD.toFixed(0)}`;
+            }
+            else if (userLocation === "IN") {
+                basePriceUSD *= exchangeRates.INR;
+                document.getElementById("priceHeading").textContent = `₹${basePriceUSD.toLocaleString()}`;
+            }
+
+            else {
+                document.getElementById("priceHeading").textContent = `USD $${basePriceUSD.toFixed(0)}`;
+            }
+        }
+        window.onload = updatePrice;
+    </script>
+   
+</body>
+
+</html>
