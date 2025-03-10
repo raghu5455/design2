@@ -1,0 +1,403 @@
+@media (max-width:1400px) {
+    .banner .banner_inner {
+        padding: 200px 0;
+        max-width: 965px;
+    }
+
+    .banner .banner_inner h2 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    .dsc_inner h2 {
+        font-size: 25px;
+    }
+
+    .about .about_content h2 {
+        font-size: 36px;
+        line-height: 56px;
+    }
+
+    .cta_inner {
+        padding: 200px 0;
+        max-width: 493px;
+    }
+
+    .cta_inner h2 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .footer h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width:1200px) {
+    .header .top-bar .top-bar-inner p {
+        font-size: 13px;
+    }
+
+    .header-area.main .main-menu ul>li>a {
+        font-size: 14px;
+    }
+
+    .header-area.main .main-menu ul>li {
+        padding: 32px 15px;
+    }
+
+    .header-logo {
+        width: 120px;
+    }
+
+    .header-logo img {
+        max-width: 120px;
+    }
+
+    .header-area.main .nav-right svg {
+        width: 20px;
+        height: 20px;
+    }
+    .header-area.main .nav-right .search-bar .search-input {
+        top: 132px;
+    }
+    .banner .banner_inner {
+        padding: 180px 0;
+        max-width: 850px;
+    }
+
+    .banner .banner_inner h2 {
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    .dsc_inner {
+        padding: 20px 0px 20px 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .dsc_inner h2 {
+        font-size: 25px;
+    }
+
+    .key_feature {
+        padding: 80px 0;
+    }
+
+    .key_feature_inner img {
+        height: 400px;
+    }
+
+    .key_feature_inner h3 {
+        font-size: 23px;
+    }
+
+    .btn-row {
+        margin-top: 30px;
+    }
+
+    .about {
+        padding: 40px 0;
+    }
+
+    .about .about_img {
+        margin-right: 50px;
+    }
+
+    .about.right .about_img {
+        margin-left: 80px;
+        margin-right: 0px;
+    }
+
+    .about .about_img img.shape1 {
+        left: -31px;
+        width: 74px;
+        top: -30px;
+    }
+
+    .about.right .about_img img.shape1 {
+        right: -31px;
+        left: inherit;
+    }
+
+    .about .about_content h2 {
+        font-size: 30px;
+        line-height: 53px;
+    }
+
+    .about.pt-100 {
+        padding-top: 80px;
+    }
+
+    .about.pb-100 {
+        padding-bottom: 80px;
+    }
+    .faq  {
+        padding-top: 60px;
+    }
+    .discription_box {
+        padding-left: 120px;
+    }
+}
+
+@media (max-width:991px) {
+    .header-area.main .header-left {
+        position: relative;
+    }
+
+    .header-area.main .nav-right .mobile-menu-btn {
+        left: 8px;
+        position: absolute;
+    }
+    .close-sidebar {
+        display: block;
+    }
+
+    .key_feature_inner img {
+        height: 250px;
+    }
+
+    .about .about_img {
+        margin-right: 0;
+    }
+
+    .about.right .about_img {
+        margin-left: 0;
+        margin-right: 0px;
+    }
+
+    .about .about_content h2 {
+        font-size: 26px;
+        line-height: 39px;
+    }
+
+    .cta_inner {
+        padding: 180px 0;
+        max-width: 400px;
+    }
+
+    .cta_inner h2 {
+        font-size: 29px;
+        line-height: 40px;
+    }
+
+    .footer {
+        padding: 60px 0 0;
+    }
+
+    .footer h2 {
+        font-size: 29px;
+    }
+
+    .insta_feed .insta_feed_inner:last-child {
+        display: none;
+    }
+    .insta_feed .insta_feed_inner {
+        display: none;
+        width: 25%;
+     }
+    .insta_feed .insta_feed_inner:nth-child(1),
+    .insta_feed .insta_feed_inner:nth-child(2),
+    .insta_feed .insta_feed_inner:nth-child(3),
+    .insta_feed .insta_feed_inner:nth-child(4) {
+        display: inline-block;
+    }
+    .contact {
+        padding: 60px 0 0;
+    }
+
+    .shop {
+        padding: 80px 0 0;
+    }
+    .letter_wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .discription_box {
+        padding-left: 0;
+    }
+    .shop_box, .discription_box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+   
+}
+
+@media (max-width: 767px) {
+    .btn {
+        padding: 13px 40px;
+        font-size: 13px;
+    }
+
+    .header .top-bar .top-bar-inner p {
+        font-size: 12px;
+    }
+
+    .header-logo {
+        width: 100px;
+    }
+
+    .header-logo img {
+        max-width: 100px;
+    }
+
+    .banner .banner_inner h2 {
+        font-size: 30px;
+        line-height: 41px;
+    }
+
+    .key_feature {
+        padding: 20px 0 60px;
+    }
+
+    .key_feature_inner {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .about.pt-100 {
+        padding-top: 60px;
+    }
+
+    .about.pb-100 {
+        padding-bottom: 60px;
+    }
+
+    .about .about_img img.shape1 {
+        left: -15px;
+        width: 61px;
+        top: -34px;
+    }
+
+    .about.right .about_img img.shape1 {
+        left: inherit;
+        right: -15px;
+    }
+
+    .about .about_img img.shape {
+        right: -10px;
+        width: 67px;
+        bottom: -18px;
+    }
+
+    .about.right .about_img img.shape {
+        left: -10px;
+        right: inherit;
+    }
+
+    .about_content {
+        margin-top: 15px;
+    }
+
+    .about .about_content h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .about {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+    .insta_feed .insta_feed_inner {
+        width: 33.33%;
+     }
+    .insta_feed .insta_feed_inner:nth-child(4) {
+        display: none; 
+    }
+    .footer_menu {
+        gap: 25px;
+        flex-direction: column;
+    }
+    ul.footer-social-icon {
+        gap: 15px;
+    }
+    .mobile-search-area button {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .header-area.main .form-inner input:focus-visible{
+        outline-color: #000;
+    }
+    .footer_bottom .copyright_text {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    .footer .footer_logo {
+        max-width: 100px;
+    }
+    .footer_bottom_wrapper {
+        flex-direction: column;
+    }
+    .list.list-payment {
+        gap: 7px;
+    }
+    .footer_bottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .faq {
+        padding-top: 45px;
+    }
+    .faq .accordion {
+        margin-top: 15px;
+    }
+    .faq .menu-button {
+        padding: 12px 15px;
+        font-size: 17px;
+        line-height: 23px;
+    }
+    .faq .content {
+        padding: 0 15px;
+    }
+    .faq .content p {
+        padding: 15px 0;
+    }
+    .contact .contact_inner h2 {
+        margin-bottom: 30px;
+    }
+    .faq.legel_info .menu-button {
+        font-size: 21px;
+    }
+    .faq .content h5 {
+        font-size: 20px;
+    }
+    .faq .content a {
+        word-break: break-word;
+    }
+
+    .shop {
+        padding: 60px 0 0;
+    }
+    .shop_details h3 {
+        font-size: 21px;
+    }
+    .shop_details .btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .shop_details .btns a.btn {
+        width: 100%;
+    }
+    .letter_img img {
+        height: 400px;
+    }
+    .letter_slider .splide__arrow {
+        width: 40px;
+        height: 40px;
+    }
+    .letter_slider .splide__arrow svg {
+        width: 17px;
+    }
+}
+
+@media (max-width:500px){
+    .insta_feed .insta_feed_inner {
+        width: 50%;
+     }
+    .insta_feed .insta_feed_inner:nth-child(3) {
+        display: none; 
+    }
+}
