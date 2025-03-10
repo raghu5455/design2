@@ -1,0 +1,500 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+    background:#ffd4c0;
+}
+a{
+    text-decoration: none;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+li{
+    list-style: none;
+}
+a.button {
+    background: #05335e;
+    font-size: 11px;
+    display: inline-block;
+    border-radius: 34px;
+    padding: 12px 20px;
+    color: white;
+}
+a.button:hover {
+    text-decoration: none;
+    box-shadow: 1px 1px 5px grey;
+    background: #052a4d;
+}
+.heading {  
+    font-size: 45px;
+    color: #05335e;
+    margin-bottom: 20px;
+}
+
+
+/*  Header css start */
+.header{
+    background-image: url("../images/header_bg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*  Navbar css start */
+.navbar {
+    padding: 14px 56px;
+}
+.navbar i{
+    padding: 7px;
+    border-radius: 50%;
+    background-color: #05335e;
+}
+.navbar i:hover{
+    text-decoration: none;
+    box-shadow: 1px 1px 5px grey;
+    background: #052a4d;
+}    
+/*  Slider css start */
+.slide {
+    padding: 100px 0px 0px 150px;
+}
+.header .slide .carousel-indicators {
+    bottom: -54px;
+    left: 65px;
+    justify-content: start;
+}
+.carousel-indicators .active {
+    background-color: #05335e;
+    width: 33px;
+    height: 10px;
+    border-radius: 12px;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #75afa7;
+}    
+.slider_content h4 {
+    font-size: 13px;
+    color: #0c2248;
+}
+.slider_content h1 {
+    font-size: 85px;
+    color: #05335e;
+    line-height: 80px;
+}
+.slider_content p {
+    font-size: 19px;
+    font-weight: 600;
+}
+.wave1{
+    background-image: url("../images/bottom-bg-strip.webp");
+    height: 100px;
+    background-repeat: no-repeat;   
+    background-size: cover;
+}
+
+
+/*  Benefit css start */
+.benefit .benefit_cont {
+    padding: 100px 0px 50px 100px;
+}
+
+/*  Treat css start */
+.treat{
+    margin-top: 60px;
+}
+.mobile_width{
+    display: none;
+}
+.box {
+    margin-top: 30px;
+}
+.carousel-indicators {
+    bottom: -10px;
+}
+.product_img {
+    border: 2px solid #05335e;
+    border-radius: 30px;
+    position: relative;
+    text-align: center;
+}
+.product_img img {
+    padding-bottom: 45px;
+}
+.product_img .icons {
+    position: absolute;
+    bottom: -11%;
+    left: 29%;
+}
+.product_img .icons ul {
+    display: flex;
+    padding: 0;
+}
+.product_img .icons ul li a {
+    padding: 10px 12px;
+    background: #05335e;
+    margin-right: 16px;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.product_detail {
+    text-align: center;
+    padding: 40px 0px;
+}
+.product_detail h5 {
+    margin: 0;
+    color: #05335e;
+}
+.product_detail h6 {
+    font-size: 10px;
+    color: #05335e;
+}
+.product_detail p {
+    font-size: 14px;
+}
+
+
+/*  Trincture css start */
+.tincture{
+    margin-top: 60px;
+}
+
+/*  Reviews css start */
+
+.reviews .heading {
+    padding: 100px 325px 70px 100px;
+}
+.review_box {
+    background: white;
+    border-radius: 30px;
+    padding: 40px 23px 20px;
+    margin-bottom: 50px;
+    box-shadow: 1px 1px 3px lightgray;
+    position: relative;
+}
+.review_box:hover {
+    text-decoration: none;
+    box-shadow: 1px 1px 5px grey;
+}
+.review_box p {
+    color: #6d6b6b;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.review_box ul .img {
+    width: 70px;
+    border-radius: 50%;
+    height: 70px;
+    background: #80808070;
+    margin-right: 33px;
+}
+.review_box ul h5 {
+    font-size: 15px;
+
+}
+.review_box h6 {
+    font-size: 15px;
+    color: #838383;
+}
+.review_box ul span .fa{
+    color: #dd988a;
+}
+.pause_icon {
+    position: absolute;
+    top: -14%;
+    left: 11%;
+    font-size: 50px;
+}
+
+
+/* Story css start */
+.story img {
+    border-radius: 35px;
+}
+.story_content {
+    padding: 45px 281px 100px 100px;
+}
+
+
+/* Pet_Issues css start */
+.pet_issues{
+    position: relative;
+}
+.card {
+    padding: 100px 100px 100px 100px;
+    background: url(../images/frame_45.webp);
+    border-radius: 46px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    margin: 0px 10px;
+    left: 0;
+}
+.card h1 {
+    color: #dceaf9;
+    font-size: 61px;
+    line-height: 54px;
+    padding-right: 120px;
+}
+.card li{
+    list-style: disc;
+    color: white;
+    line-height: 10px;
+}
+.card li p {
+    font-size: 15px;
+    font-weight: 500;
+}
+.wave2 {
+    background: url(../images/img11.webp);
+    height: 500px;
+    background-position: top;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 246px;
+    left: 0;
+}
+
+/* Subscribe css start */
+.subscribe {
+    padding-bottom: 60px;
+}   
+.submit_form {
+    overflow: auto;
+    background: white;
+    border-radius: 34px
+}
+input.form-control {
+    padding: 12px;
+    padding-left: 28px;
+    border-radius: 29px;
+    border: none;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0rem rgba(0,123,255,.25) !important;
+}
+.submit_form .button {
+    font-size: 11px;
+    border-radius: 34px;
+    padding: 7px 33px;
+    font-size: 16px;
+    margin: 5px 6px;
+}
+/* Subscribe css end */
+
+
+/* Media css start */
+.media img{
+    border: 2px solid #05335e;
+    border-radius: 30px;
+}
+.media h5 {
+    color: #05335e;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+/* Media css end */
+
+
+/* chat css start */
+.chat{
+    padding: 60px 0px;
+}
+.chat img {
+    border: 2px solid #05335e;
+    border-radius: 30px;
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+.chat h5{
+    color: #05335e;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+.chat a{
+    font-size: 14px;
+    color: #052a4d;
+}
+/* chat css end */
+
+/* social_media css start */
+.social_media img{
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* social_media css end */
+
+
+/* Footer css start */
+.footer{
+    background-image: url("../images/Vector.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white !important;
+}
+.footer .footer_content {
+    padding: 170px 100px 50px 100px;
+    margin-top: 100px;
+}
+.footer h2 {
+    font-size: 23px;
+}
+.footer a{
+    font-size: 14px;
+    color: white !important;
+    line-height: 32px;
+}
+.footer h4 {
+    font-size: 10px;
+    margin-top: 10px;
+}
+.footer h5 {
+    font-size: 10px;
+    margin-top: 40px;
+}
+.footer i {
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.footer .social_icons a:hover{
+    text-decoration: none;
+}
+/* Footer css end */
+@media (max-width:991px){
+    .slide {
+        padding: 72px 0px 0px 100px;
+    }
+    .slider_content p {
+        font-size: 15px;
+    }
+    .slider_content h1 {
+        font-size:79px;
+    } 
+    
+    .reviews .heading {
+        padding: 50px 0px 70px 100px;
+    }
+
+    .review_box h6 {
+        font-size: 12px;
+    }
+    .review_box ul .img {
+        margin-right: 14px;
+    }
+    .review_box ul h5 {
+        font-size: 14px;
+    }
+    .review_box p {
+        font-size: 10px;
+    }
+    .review_box ul span .fa {
+        font-size: 11px;
+    }
+    
+    .story_content {
+        padding: 45px 100px 100px 100px;
+    }
+    .card h1 {
+        font-size: 40px;
+        padding-right: 0;
+    }
+    .social_media {
+        padding-top: 60px;
+    }
+    .footer .footer_content {
+        padding: 170px 0px 50px 0px;
+        margin-top: 100px;
+    }
+    .footer a {
+        line-height: 28px;
+    }
+    .footer i {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width:767px){
+    p{
+        font-size: 12px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    .navbar{
+        padding: 10px 0px;
+    }
+    .slide{
+        padding-left: 0;
+        padding-bottom: 50px;
+    }
+    .carousel-indicators {
+        bottom: 12px;
+        margin: 0;
+        left: 10px;
+    }
+    .slider_content h1 {
+        font-size: 44px;
+        color: #05335e;
+        line-height: 48px;
+    }
+    .slider_content p {
+        font-size: 13px;
+    }
+
+    .benefit .benefit_cont {
+        padding-right: 0;
+        padding-left: 12px;
+    } 
+
+    .products{
+        display: none !important;
+    }
+    .mobile_width{
+        display: inline !important;
+    }
+
+    .reviews .heading {
+        padding-right: 0;
+        padding-left: 12px;
+    }  
+    .review_box ul .img {
+        margin-right: 60px;
+    }
+    .story_content {
+        padding: 45px 16px 50px 16px;
+    }
+    .card {
+        padding: 50px 20px ;
+    }    
+    .card h1 {
+        font-size: 27px;
+        line-height: 33px;
+    }   
+    .wave2 {
+        height: 366px;
+        top: 151px;
+    } 
+    .social_media {
+        padding-top: 0px;
+    }
+    .social_icons{
+        width: 40% !important;
+    }
+}
